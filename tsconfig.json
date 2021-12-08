@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
+    "target": "es2016",
+    "lib": ["dom", "esnext"],
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "incremental": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "types": ["vite/client"],
+    "paths": {
+      "@/*": ["src/*"],
+      "vpage/*": ["_vpage/lib/*"]
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "exclude": ["dist", "node_modules"]
+}
